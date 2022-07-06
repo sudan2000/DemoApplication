@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/m_home_personal_info_health_coin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/view_coin_progress_layout_bg"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <com.susu.baselibrary.view.customerview.NumberRunningTextView
+                android:id="@+id/view_coin_total_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:duration="1000"
+                tools:text="582" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="健康币"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/view_icon_can_receive_num_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="今日可领取健康币"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_coin_can_receive_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFEDA1"
+                android:textSize="12sp"
+                tools:text="+288"
+                android:layout_marginEnd="8dp"/>
+
+
+            <TextView
+                android:id="@+id/view_coin_obtain_tv"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:background="@drawable/view_coin_obtain_bg"
+                android:gravity="center"
+                android:text="一键领取"
+                android:layout_marginTop="8dp"
+                android:textColor="#844F00"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/view_coin_progress_bg_tv"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/view_coin_progress_bg" />
+
+            <TextView
+                android:id="@+id/view_coin_progress_front_tv"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/view_coin_progress_front_bg"
+                />
+
+
+            <ImageView
+                android:id="@+id/view_coin_progress_icon_iv"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/view_coin_progress_bar_icon"
+                tools:layout_marginLeft="30dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/view_coin_sign_card_bg"
+        android:paddingLeft="12dp"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/view_coin_sign_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已连续签到 "
+            android:textColor="#232833"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/m_person_health_coin_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0天"
+            android:textColor="#FFB200"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view_coin_sign_title_tv"
+            app:layout_constraintLeft_toRightOf="@+id/view_coin_sign_title_tv"
+            app:layout_constraintTop_toTopOf="@+id/view_coin_sign_title_tv" />
+
+        <LinearLayout
+            android:id="@+id/view_coin_sign_num_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dip"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_coin_sign_title_tv">
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                android:layout_marginStart="0dp"
+                tools:text="+10" />
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+15" />
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+288" />
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+10000" />
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+1" />
+
+            <TextView
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+1000" />
+
+            <TextView
+                android:id="@+id/signNumTv7"
+                style="@style/BaseTextViewCoinNum"
+                tools:text="+19" />
+
+            <TextView
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dip" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/view_coin_sign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_coin_sign_num_layout">
+
+            <TextView
+                android:id="@+id/coinTv1"
+                style="@style/BaseTextViewCoin"
+                android:layout_marginStart="0dp"
+                tools:text="4.29" />
+
+            <TextView
+                android:id="@+id/coinTv2"
+                style="@style/BaseTextViewCoin"
+                tools:text="4.30" />
+
+            <TextView
+                android:id="@+id/coinTv3"
+                style="@style/BaseTextViewCoin"
+                tools:text="今天" />
+
+            <TextView
+                android:id="@+id/coinTv4"
+                style="@style/BaseTextViewCoin"
+                tools:text="今天" />
+
+            <TextView
+                android:id="@+id/coinTv5"
+                style="@style/BaseTextViewCoin"
+                tools:text="今天" />
+
+            <TextView
+                android:id="@+id/coinTv6"
+                style="@style/BaseTextViewCoin"
+                tools:text="今天" />
+
+            <TextView
+                android:id="@+id/coinTv7"
+                style="@style/BaseTextViewCoin"
+                tools:text="今天" />
+
+            <TextView
+                android:id="@+id/view_coin_sign_tv"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dip"
+                android:background="@drawable/view_coin_sign_tv_bg"
+                android:gravity="center"
+                android:text="签到"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/m_person_line_tv"
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_marginTop="25dp"
+            android:background="#E1E5F0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_coin_sign_layout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

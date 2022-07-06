@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 录音 start-->
+    <dimen name="base_audio_input_view_default_item_width">2dp</dimen>
+    <dimen name="base_audio_input_view_default_item_space">2dp</dimen>
+    <dimen name="base_audio_input_view_default_item_max_height">12dp</dimen>
+    <dimen name="base_audio_input_view_default_item_min_height">2dp</dimen>
+    <!-- 录音 end-->
+    <dimen name="base_tip_corner">15dp</dimen>
+</resources>

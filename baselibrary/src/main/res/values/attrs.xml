@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="BaseNumberRunningTextView">
+        <attr name="duration" format="integer" />
+        <attr name="minNum" format="integer" />
+        <attr name="minMoney" format="float" />
+        <!--内容的格式-->
+        <attr name="textType">
+            <enum name="num" value="0" />
+            <enum name="money" value="1" />
+        </attr>
+        <!--是否使用每三位数字一个逗号-->
+        <attr name="useCommaFormat" format="boolean" />
+        <!--是否当内容改变的时候使用动画，不改变则不使用动画-->
+        <attr name="runWhenChange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TickerView">
+        <attr name="ticker_animationDuration" format="reference|integer" />
+        <attr name="ticker_animateMeasurementChange" format="reference|boolean" />
+        <attr name="ticker_defaultCharacterList" format="enum">
+            <enum name="number" value="1" />
+            <enum name="alphabet" value="2" />
+        </attr>
+        <attr name="ticker_defaultPreferredScrollingDirection" format="enum">
+            <enum name="any" value="0" />
+            <enum name="up" value="1" />
+            <enum name="down" value="2" />
+        </attr>
+
+        <!-- Custom implementations of common android text attributes -->
+        <attr name="android:gravity" tools:ignore="ResourceName" />
+        <attr name="android:shadowColor" tools:ignore="ResourceName" />
+        <attr name="android:shadowDx" tools:ignore="ResourceName" />
+        <attr name="android:shadowDy" tools:ignore="ResourceName" />
+        <attr name="android:shadowRadius" tools:ignore="ResourceName" />
+        <attr name="android:text" tools:ignore="ResourceName" />
+        <attr name="android:textAppearance" tools:ignore="ResourceName" />
+        <attr name="android:textColor" tools:ignore="ResourceName" />
+        <attr name="android:textSize" tools:ignore="ResourceName" />
+        <attr name="android:textStyle" tools:ignore="ResourceName" />
+    </declare-styleable>
+
+    <declare-styleable name="AudioInputVoiceAnimateView">
+        <attr name="item_count" format="integer" />
+        <attr name="item_width" format="dimension" />
+        <attr name="item_space" format="dimension" />
+        <attr name="item_max_height" format="dimension" />
+        <attr name="item_min_height" format="dimension" />
+        <attr name="item_color" format="color" />
+        <attr name="direction">
+            <enum name="left_to_right" value="1" />
+            <enum name="right_to_left" value="2" />
+        </attr>
+        <attr name="voice_grade" format="integer" />
+    </declare-styleable>
+
+</resources>

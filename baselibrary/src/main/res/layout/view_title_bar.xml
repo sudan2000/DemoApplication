@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/m_personal_home_me_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_title_bar_bg"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/m_personal_home_me_fake_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/m_personal_home_me_header_bg"
+        android:layout_alignBottom="@id/m_personal_home_me_header_bg">
+
+        <ImageView
+            android:id="@+id/personal_titlebar_empty_view"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/setting"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/base_user_default_photo"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/setting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/base_home_personal_settings" />
+
+        <TextView
+            android:id="@+id/m_home_personal_exchange_vip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/setting"
+            android:layout_alignBaseline="@+id/setting"
+            android:text="兑换会员"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="#FFB237"/>
+
+        <TextView
+            android:textIsSelectable="false"
+            android:id="@+id/m_personal_home_me_title"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/setting"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#2B313D"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        <!--用户图像区域-->
+        <RelativeLayout
+            android:id="@+id/person_home_me_header_lay_portrait"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:id="@+id/m_personal_round_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/base_user_default_photo" />
+        </RelativeLayout>
+        <!--用户相关信息区域-->
+        <LinearLayout
+            android:id="@+id/m_personal_page_header_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/person_home_me_header_lay_portrait"
+            android:layout_alignBottom="@+id/person_home_me_header_lay_portrait"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/person_home_me_header_lay_portrait"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_personal_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical">
+
+                <TextView
+                    android:id="@+id/m_personal_header_info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="#23213d"
+                    android:textSize="18sp"
+                    android:visibility="visible"
+                    tools:text="ss"
+                    android:textIsSelectable="false" />
+
+                <ImageView
+                    android:id="@+id/m_personal_vip_iv"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/m_personal_header_info_name"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/m_home_personal_info_family_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_personal_info"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:background="#5E616B">
+
+                <TextView
+                    android:id="@+id/m_home_personal_info_family_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="常用就诊人"
+                    android:textColor="#2B313D"
+                    android:textSize="12dp"
+                    android:textIsSelectable="false" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

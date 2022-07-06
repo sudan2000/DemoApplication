@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+}
+
+//uploadArchives {
+//    repositories {
+//        mavenDeployer {
+//            pom.groupId = 'com.susu.android'
+//            pom.artifactId = 'base_lib'
+//            pom.version = '1.4.4.5--SNAPSHOT'
+//
+////            repository(url: "file:///Users/sudan/.m2/repository/")
+//            repository(url: "http://nexus.susu-inc.com/nexus/content/repositories/snapshots/") {
+//                authentication(userName: "lxsnap", password: "Lxsnap123")
+//            }
+//        }
+//    }
+//}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    //    compile(name: 'wysphinx_android_v1.3.2', ext: 'aar')
+    api rootProject.ext.dependence.androidx
+    api rootProject.ext.dependence.constraintlayout
+    api rootProject.ext.dependence.glide
+    annotationProcessor rootProject.ext.dependence.glideCompiler
+    api rootProject.ext.dependence.okhttp
+    api rootProject.ext.dependence.gson
+    api rootProject.ext.dependence.okhttpLogging
+    api rootProject.ext.dependence.rxandroid
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    api 'com.google.android.material:material:1.0.0'
+    api rootProject.ext.dependence.retrofit
+    api "com.airbnb.android:lottie:2.7.0"//lottie
+}

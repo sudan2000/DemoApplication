@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tv0"
+            style="@style/app_tv_main_activity"
+            android:text="BaseTest" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/app_tv_main_activity"
+            android:text="KotlinTestActivity" />
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/app_tv_main_activity"
+            android:text="RecyclerViewTestActivity" />
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/app_tv_main_activity"
+            android:text="CustomViewTestActivity" />
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/app_tv_main_activity"
+            android:text="AnimTestActivity" />
+        <TextView
+            android:id="@+id/tv5"
+            style="@style/app_tv_main_activity"
+            android:text="WebViewActivity" />
+
+        <TextView
+            android:id="@+id/tv6"
+            style="@style/app_tv_main_activity"
+            android:text="SpeechTestActivity" />
+
+        <TextView
+            android:id="@+id/tv7"
+            style="@style/app_tv_main_activity"
+            android:text="ScrollRecyclerViewActivity" />
+
+        <TextView
+            android:id="@+id/tv8"
+            style="@style/app_tv_main_activity"
+            android:text="鹰眼tracingActivity" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/dialog_common_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/base_dialog_common_view_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dialog_common_view_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_common_view_title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingTop="12dp"
+                android:paddingRight="12dp"
+                android:textColor="#5E616B"
+                android:textIsSelectable="false"
+                android:textSize="17sp"
+                tools:text="我是title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialog_common_view_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dialog_common_view_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:textColor="#2B313D"
+                android:textIsSelectable="false"
+                android:textSize="15sp"
+                tools:text="我是message" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E0E1E6" />
+
+        <LinearLayout
+            android:id="@+id/dialog_common_view_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_common_view_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/base_dialog_common_view_button_bg_selector"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#3F86FF"
+                android:textSize="15sp"
+                tools:text="确定" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

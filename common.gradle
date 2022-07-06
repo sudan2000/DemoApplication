@@ -1,0 +1,45 @@
+ext {
+
+    android = [compileSdkVersion: 29,
+               buildToolsVersion: '29.0.2',
+               applicationId    : 'com.susu.demoapplication',
+               minSdkVersion    : 21,
+               targetSdkVersion : 29,
+               versionCode      : 1,
+               versionName      : '1.0.0',
+               multiDexEnabled  : true
+    ]
+
+    signConfigs = ['storeFile'    : 'android.jks',
+                   'storePassword': '123456',
+                   'keyAlias'     : 'android',
+                   'keyPassword'  : '123456'
+    ]
+
+    java = ['javaVersion': JavaVersion.VERSION_1_8]
+
+
+    dependence = ['libSupportV7'        : 'com.android.support:appcompat-v7:28.0.0',
+                  'androidx'            : 'androidx.appcompat:appcompat:1.0.2',
+                  'constraintlayout'    : 'androidx.constraintlayout:constraintlayout:1.1.3',
+                  'junit'               : 'junit:junit:4.12',
+                  'testJunit'           : 'androidx.test.ext:junit:1.1.0',
+                  'espresso'            : 'androidx.test.espresso:espresso-core:3.1.1',
+                  'glide'               : 'com.github.bumptech.glide:glide:4.4.0',
+                  'glideCompiler'       : 'com.github.bumptech.glide:compiler:4.4.0',
+                  'okhttp'              : 'com.squareup.okhttp3:okhttp:3.12.0',
+                  'okhttpLogging'       : 'com.squareup.okhttp3:logging-interceptor:3.12.0',
+                  'rxandroid'           : 'io.reactivex.rxjava2:rxandroid:2.1.0',
+                  'gson'                : 'com.google.code.gson:gson:2.6.2',
+                  'kotlin'              : 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version',
+                  'ktx'                 : 'androidx.core:core-ktx:1.6.0',
+
+                  'logger'              : 'com.orhanobut:logger:+',
+                  'tinker'              : "com.tencent.tinker:tinker-android-lib:1.7.7",
+                  'tinkerAndroid'       : "com.tencent.tinker:tinker-android-anno:1.7.7",
+                  'libTestin'           : 'cn.testin.analysis:testin-ab:latest.integration',
+                  'retrofit'            : 'com.squareup.retrofit2:retrofit:2.9.0',
+
+    ]
+
+}

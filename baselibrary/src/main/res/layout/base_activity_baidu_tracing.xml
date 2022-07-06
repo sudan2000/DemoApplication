@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#008EEF"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_activity_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="百度鹰眼"
+            android:textColor="#333"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/tracing_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_tracing_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_trace"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_baidu_btn_cancel"
+            android:text="开启服务"
+            android:textColor="#008EEF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_trace_stop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_baidu_btn_cancel"
+            android:text="停止服务"
+            android:textColor="#008EEF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_gather"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_baidu_btn_cancel"
+            android:onClick="onTraceControl"
+            android:text="开启采集"
+            android:textColor="#008EEF"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/btn_gather_stop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/bg_baidu_btn_cancel"
+            android:onClick="onTraceControl"
+            android:text="停止采集"
+            android:textColor="#008EEF"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

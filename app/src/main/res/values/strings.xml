@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="permission_reason">用于xxxxxx</string>
+    <string name="beauty_no_report_people_experience_before">你即将成为第</string>
+    <string name="beauty_no_report_people_experience_after">位体验者</string>
+    <string name="beauty_skin_detect_count_now">目前，有\n%1$d\n人在这里检测皮肤状态</string>
+</resources>

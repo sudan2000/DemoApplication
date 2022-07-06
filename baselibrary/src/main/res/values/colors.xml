@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="green">#00ffff</color>
+    <color name="gray">#808080</color>
+
+    <color name="color_orange">#ff7e3b</color>
+
+
+    <color name="color_7e5bff">#7e5bff</color>
+    <color name="color_ff6094">#ff6094</color>
+    <color name="color_fec8c4">#fec8c4</color>
+    <color name="color_556a73">#556a73</color>
+    <color name="color_afafb0">#afafb0</color>
+    <color name="color_dfdfdf">#dfdfdf</color>
+
+    <color name="color_a0dbff">#A0DBFF</color>
+    <color name="color_714aff">#714AFF</color>
+    <color name="color_ff4582">#FF4582</color>
+    <color name="color_ffdbb7">#FFDBB7</color>
+
+    <color name="color_8cedf9">#8CEDF9</color>
+    <color name="color_8657ff">#8657FF</color>
+    <color name="color_ff407e">#FF407E</color>
+    <color name="color_edbeab">#edbeab</color>
+    <color name="color_36d5b0">#36d5b0</color>
+    <color name="color_f0b449">#f0b449</color>
+    <color name="color_8b849f">#8b849f</color>
+    <color name="color_ffba72">#FFBA72</color>
+    <color name="color_ff7da7">#FF7DA7</color>
+    <color name="color_a17cff">#A17CFF</color>
+    <color name="color_38d4be">#38D4BE</color>
+    <color name="color_e6e6e6">#E6E6E6</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_fcf8f9">#fcf8f9</color>
+
+    <color name="bg_toolbar_color">#3F86FF</color>
+
+
+
+</resources>

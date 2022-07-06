@@ -1,0 +1,4 @@
+include ':app', ':picture_library'
+rootProject.name='My Application'
+include ':baselibrary'
+include ':myaidlclient'

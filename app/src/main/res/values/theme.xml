@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TitleBar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">0dp</item>
+        <!-- 设置该属性解决空白部分-->
+    </style>
+
+    <style name="Theme.Su.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#F8F8F8</item>
+        <item name="toolbarStyle">@style/TitleBar</item>
+        <!-- 通过使用Toolbar来自定义标题 -->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.Su.NoActionBar"/>
+</resources>

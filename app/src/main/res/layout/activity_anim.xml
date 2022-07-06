@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beauty_manager_no_report_background">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/iv_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tv_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:drawableStart="@drawable/beauty_manager_icon_location"
+        android:drawablePadding="6dp"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tv_desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:text="目前有" />
+
+    <TextView
+        android:id="@+id/tv_desc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:text="801" />
+
+    <TextView
+        android:id="@+id/tv_desc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_desc2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        tools:text="人在这里检测皮肤状态" />
+
+    <View
+        android:id="@+id/v_try_now"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/bottomLL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_people_experience_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beauty_no_report_people_experience_before"
+            android:textColor="@color/gray"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.susu.baselibrary.view.customerview.NumberRunningTextView
+            android:id="@+id/tv_people_experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:textType="num"
+            tools:text="1000" />
+
+        <TextView
+            android:id="@+id/tv_experience_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/beauty_no_report_people_experience_after"
+            android:textColor="@color/gray"
+            android:textSize="14dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>
